@@ -6,6 +6,7 @@ The application allows users to discover popular movies, search movies dynamical
 ---
 
 # 🚀 Live Features
+Link: https://cine-stream-mwlvj9gaw-aryan-webdevelopers-projects.vercel.app/
 
 ## ✅ Popular Movies Feed
 - Fetches trending/popular movies from TMDB API
