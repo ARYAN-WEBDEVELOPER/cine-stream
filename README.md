@@ -1,16 +1,98 @@
-# React + Vite
+# 🎬 Cine-Stream
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cine-Stream is a Netflix-inspired Media Explorer SPA built using React, Vite, Tailwind CSS, and the TMDB API.  
+The application allows users to discover popular movies, search movies dynamically, save favorites, and even get AI-powered movie recommendations based on mood.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# 🚀 Live Features
 
-## React Compiler
+## ✅ Popular Movies Feed
+- Fetches trending/popular movies from TMDB API
+- Responsive movie grid layout
+- Modern Netflix-style UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✅ Dynamic Search
+- Real-time movie searching
+- TMDB Search API integration
+- Empty state handling
 
-## Expanding the ESLint configuration
+## ✅ Debounced Search
+- Optimized API requests
+- 500ms debounce architecture
+- Prevents excessive HTTP calls
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✅ Infinite Scroll
+- Automatic loading of next pages
+- Intersection Observer API
+- Large-scale feed rendering
+
+## ✅ Favorites System
+- Add/remove favorite movies
+- Persistent localStorage state
+- Dedicated favorites route
+
+## ✅ AI Mood Matcher
+- Gemini AI integration
+- Contextual movie recommendations
+- AI → TMDB API orchestration
+
+## ✅ Asset Optimization
+- Native lazy loading images
+- Faster rendering performance
+- Reduced bandwidth usage
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- React Router DOM
+
+## APIs
+- TMDB API
+- Google Gemini API
+
+## State & Performance
+- React Hooks
+- Debouncing
+- Intersection Observer
+- localStorage
+
+---
+
+# 📂 Project Structure
+
+```bash
+src/
+│
+├── api/
+│   ├── tmdb.js
+│   └── gemini.js
+│
+├── components/
+│   ├── MovieCard.jsx
+│   ├── Navbar.jsx
+│   ├── SearchBar.jsx
+│   └── MoodSearch.jsx
+│
+├── hooks/
+│   ├── useDebounce.js
+│   └── useInfiniteScroll.js
+│
+├── pages/
+│   ├── Home.jsx
+│   └── Favorites.jsx
+│
+├── routes/
+│   └── AppRoutes.jsx
+│
+├── utils/
+│   └── localStorage.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
