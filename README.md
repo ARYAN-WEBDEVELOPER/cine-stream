@@ -96,3 +96,81 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── index.css
+
+---
+
+⚙️ Environment Variables
+
+Create a .env file in root directory:
+
+VITE_TMDB_API_KEY=your_tmdb_api_key
+VITE_GEMINI_API_KEY=your_gemini_api_key
+
+---
+
+🔑 API Setup
+TMDB API
+
+Get API Key from:
+
+https://developer.themoviedb.org
+
+Gemini API
+
+Get API Key from:
+
+https://aistudio.google.com
+
+---
+
+📦 Installation
+
+Clone repository:
+
+git clone https://github.com/YOUR_USERNAME/cine-stream.git
+
+Move into project folder:
+
+cd cine-stream
+
+Install dependencies:
+
+npm install
+
+Run development server:
+
+npm run dev
+
+---
+
+
+🧠 Engineering Concepts Implemented
+Component Architecture
+Infinite Scrolling
+Debouncing
+API Orchestration
+Route Management
+Persistent State
+Lazy Loading
+Custom Hooks
+AI API Integration
+Responsive Design
+
+---
+
+🚀 Deployment
+GitHub
+
+Code hosted on GitHub repository.
+
+Vercel
+
+Production deployment using Vercel.
+
+👨‍💻 Author
+
+Aryan 
+
+📄 License
+
+This project is built for educational and portfolio purposes.
